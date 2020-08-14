@@ -1,0 +1,11 @@
+﻿
+@{
+    ViewBag.Title = "CreatePdf";
+}
+
+<h2>CreatePdf</h2>
+
+@using (Html.BeginForm("CreatePdf", "Home", FormMethod.Post))
+{
+    <input type="submit" name="convertToPdfButton" value="Convert HTML to PDF" id="convertToPdfButton">
+}
