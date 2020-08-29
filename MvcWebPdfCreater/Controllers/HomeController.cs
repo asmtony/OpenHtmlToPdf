@@ -30,8 +30,9 @@ namespace MvcWebPdfCreater.Controllers
 
         public ActionResult CreatePdf()
         {
+            
             PdfFiles pdfFiles = new PdfFiles();
-            string reportUrl = "http://goengagexopa.cloudapp.net/Reports/10640/report.html";
+            string reportUrl = "http://goengagexopa.cloudapp.net/Reports/10650/report.html";
 
             FileResult fileResult = pdfFiles.CreatePdf(reportUrl);
 

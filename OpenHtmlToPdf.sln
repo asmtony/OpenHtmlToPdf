@@ -20,6 +20,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinFormPdfSharp", "PdfSharp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcWebPdfCreater", "MvcWebPdfCreater\MvcWebPdfCreater.csproj", "{152C1BEC-1A25-492D-888B-EF31F2331A4A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApiPdfCreater", "WebApiPdfCreater\WebApiPdfCreater.csproj", "{006AEACC-9CA6-4189-9A54-6EA698FE9889}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -94,6 +96,18 @@ Global
 		{152C1BEC-1A25-492D-888B-EF31F2331A4A}.Release|x64.Build.0 = Release|Any CPU
 		{152C1BEC-1A25-492D-888B-EF31F2331A4A}.Release|x86.ActiveCfg = Release|Any CPU
 		{152C1BEC-1A25-492D-888B-EF31F2331A4A}.Release|x86.Build.0 = Release|Any CPU
+		{006AEACC-9CA6-4189-9A54-6EA698FE9889}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{006AEACC-9CA6-4189-9A54-6EA698FE9889}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{006AEACC-9CA6-4189-9A54-6EA698FE9889}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{006AEACC-9CA6-4189-9A54-6EA698FE9889}.Debug|x64.Build.0 = Debug|Any CPU
+		{006AEACC-9CA6-4189-9A54-6EA698FE9889}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{006AEACC-9CA6-4189-9A54-6EA698FE9889}.Debug|x86.Build.0 = Debug|Any CPU
+		{006AEACC-9CA6-4189-9A54-6EA698FE9889}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{006AEACC-9CA6-4189-9A54-6EA698FE9889}.Release|Any CPU.Build.0 = Release|Any CPU
+		{006AEACC-9CA6-4189-9A54-6EA698FE9889}.Release|x64.ActiveCfg = Release|Any CPU
+		{006AEACC-9CA6-4189-9A54-6EA698FE9889}.Release|x64.Build.0 = Release|Any CPU
+		{006AEACC-9CA6-4189-9A54-6EA698FE9889}.Release|x86.ActiveCfg = Release|Any CPU
+		{006AEACC-9CA6-4189-9A54-6EA698FE9889}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

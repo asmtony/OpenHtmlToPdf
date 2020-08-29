@@ -36,7 +36,7 @@ namespace MvcWebPdfCreater.Helpers
             var webPageFullLocalPath = saveDirectory + "\\" + "report.html";
 
             var pdfFullLocalPath = saveDirectory + filenamePdf;
-            if (!File.Exists(pdfFullLocalPath))
+            if (File.Exists(pdfFullLocalPath))
                 File.Delete(pdfFullLocalPath);
 
             if (File.Exists(webPageFullLocalPath))

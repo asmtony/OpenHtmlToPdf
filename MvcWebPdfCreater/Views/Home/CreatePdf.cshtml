@@ -7,5 +7,8 @@
 
 @using (Html.BeginForm("CreatePdf", "Home", FormMethod.Post))
 {
+    <div style="margin:0 auto;text-align:center;width:250px">
+        <input type="text" id="txtWebUrl" style="border-color:#25a2c3;" />
+    </div>
     <input type="submit" name="convertToPdfButton" value="Convert HTML to PDF" id="convertToPdfButton">
 }
