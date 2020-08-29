@@ -110,19 +110,25 @@ namespace WebApiPdfCreater.Helper
                 File.Delete(webPageFullLocalPath);
 
             WebClient Client = new WebClient();
+            try
+            {
+                await Client.DownloadFileTaskAsync(webPageForPdf, webPageFullLocalPath);
 
-            await Client.DownloadFileTaskAsync(webPageForPdf, webPageFullLocalPath);
+                string html = File.ReadAllText(webPageFullLocalPath);
 
-            string html = File.ReadAllText(webPageFullLocalPath);
+                byte[] content = Pdf.From(html)
+                    .WithGlobalSetting("web.loadImages", "true")
+                    .WithGlobalSetting("load.jsdelay", "5000")
+                    .WithGlobalSetting("load.zoomFactor", "10")
+                    .WithGlobalSetting("size.pageSize", "A4")
+                    .Content();
 
-            byte[] content = Pdf.From(html)
-                .WithGlobalSetting("web.loadImages", "true")
-                .WithGlobalSetting("load.jsdelay", "5000")
-                .WithGlobalSetting("load.zoomFactor", "10")
-                .WithGlobalSetting("size.pageSize", "A4")
-                .Content();
- 
-            File.WriteAllBytes(pdfFullLocalPath, content.ToArray());
+                File.WriteAllBytes(pdfFullLocalPath, content.ToArray());
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            } 
 
             return filenamePdf;
         }

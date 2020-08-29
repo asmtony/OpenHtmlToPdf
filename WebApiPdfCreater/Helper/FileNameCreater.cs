@@ -11,10 +11,11 @@ namespace WebApiPdfCreater.Helper
         {
             string year = DateTime.Now.Year.ToString();
             string month = (DateTime.Now.Month.ToString().Length == 1) ? $"0{DateTime.Now.Month.ToString()}" : DateTime.Now.Month.ToString();
-            string day = (DateTime.Now.Day.ToString().Length == 1) ? $"0{DateTime.Now.Day.ToString()}" : DateTime.Now.Day.ToString();
-            string seconds = DateTime.Now.Second.ToString();
+            string day = (DateTime.Now.Day.ToString().Length == 1) ? $"0{DateTime.Now.Day.ToString()}" : DateTime.Now.Day.ToString();            
 
-            return $"{year}{month}{day}{seconds}";
+            TimeSpan mySpan = new TimeSpan(DateTime.Now.Hour, DateTime.Now.Minute, DateTime.Now.Second);
+            string secondsSinceMidnight = mySpan.TotalSeconds.ToString();
+            return $"{year}_{month}_{day}_{secondsSinceMidnight}";
         }
     }
 }

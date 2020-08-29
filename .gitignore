@@ -6,7 +6,7 @@ _ReSharper.*
 *.user
 *.suo
 packages
-
+pdf
 # mstest test results
 TestResults
 *.nupkg
